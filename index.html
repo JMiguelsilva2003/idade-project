@@ -6,16 +6,28 @@
     <title>Projeto Idade</title>
     <link rel="stylesheet" href="estilos/style.css" media="all">
 </head>
-<body>
+<body onload="carregar()">
     <header>
         <h1>Projeto Idade</h1>
     </header>
     <section>
-        <div>
-
+        <div id="msg">
+            <p>Ano de Nascimento:
+                <input type="number" id="txtano" name="txtano" value="2003">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="masc" value="M" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem" value="F">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+                <input type="button" value="Limpar" onclick="limpar()">
+            </p>
         </div>
-        <div>
-
+        <div id="res">
+            <p>Preencha os dados acima para ver o resultado!</p>
         </div>
     </section>
     <footer>

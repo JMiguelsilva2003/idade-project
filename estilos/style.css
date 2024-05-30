@@ -20,8 +20,22 @@ section{
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.363);
 }
 
+div{
+    text-align: center;
+    padding: 8px;
+}
+
+img{
+    width: 25vw;
+    height: 50vh;
+    border-radius: 50% 50%;
+}
+
 footer{
-    color: white;
+    color: black;
+    padding: 0.1px;
+    margin: 10px;
     text-align: center;
     font-style: italic;
+    background-color: white;
 }
